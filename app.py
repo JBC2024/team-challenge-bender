@@ -19,10 +19,8 @@ def home():
 
 # Enruta la funcion al endpoint /api/v1/opcional
 
-# debug = False
-# if __name__ == "__mmain__":
-#     debug=True
+debug = False
+if __name__ == "__mmain__":
+    debug=True
 
-# app.run(debug=debug)
-
-app.run()
+app.run(debug=debug, host='0.0.0.0', port=8080)
