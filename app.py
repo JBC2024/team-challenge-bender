@@ -6,7 +6,7 @@ import endpoint_home
 # os.chdir(os.path.dirname(__file__))
 
 app = flask.Flask(__name__)
-# app.config['DEBUG'] = True
+app.config['DEBUG'] = True
 
 # Enruta la landing page (endpoint /)
 @app.route('/', methods=['GET'])
@@ -19,8 +19,10 @@ def home():
 
 # Enruta la funcion al endpoint /api/v1/opcional
 
-debug = False
-if __name__ == "__mmain__":
-    debug=True
+# debug = False
+# if __name__ == "__mmain__":
+#     debug=True
 
-app.run(debug)
+# app.run(debug=debug)
+
+app.run()
