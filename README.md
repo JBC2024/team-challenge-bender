@@ -22,8 +22,8 @@ Un endpoint es como una puerta de entrada a una funcionalidad concreta.
 | Endpoint        | ¿Para qué sirve?                                                                                              |
 |-----------------|---------------------------------------------------------------------------------------------------------------|
 | `/`             | Página principal. Te explica cómo funciona la API.          |
-| `/predice`      | Envías datos y recibes una predicción del modelo.                                                             |
-| `/entrena`      | Permite reentrenar el modelo con nuevos datos.  |
+| `/predict`      | Envías datos y recibes una predicción del modelo.                                                             |
+| `/retrain`      | Permite reentrenar el modelo con nuevos datos.  |
 
 
 ---
