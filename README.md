@@ -1,14 +1,13 @@
-# team-challenge-bender
-# 🧠 Team Challenge Bender – API de Predicción
+# Team Challenge Bender – API de Predicción
 
 Este proyecto es una API REST que permite hacer predicciones mediante un modelo de machine learning, accesible desde internet.
 
-## 🌐 URL del despliegue
-👉 [https://team-challenge-bender.onrender.com/](https://team-challenge-bender.onrender.com/)
+## URL del despliegue
+[https://team-challenge-bender.onrender.com/](https://team-challenge-bender.onrender.com/)
 
 ---
 
-## 📌 Endpoints disponibles
+## Endpoints disponibles
 
 | Endpoint        | Descripción |
 |----------------|-------------|
