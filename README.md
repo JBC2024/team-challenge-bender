@@ -28,7 +28,7 @@ Un endpoint es como una puerta de entrada a una funcionalidad concreta.
 
 ---
 
-## 🧪 ¿Cómo lo uso desde Python?
+## ¿Cómo lo uso desde Python?
 
 Se puede acceder a él  con la librería `requests`:
 
