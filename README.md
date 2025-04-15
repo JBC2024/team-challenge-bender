@@ -17,7 +17,6 @@ https://team-challenge-bender.onrender.com/
 ## Endpoints disponibles:
 
 Hemos preparado varios "endpoints".  
-Un endpoint es como una puerta de entrada a una funcionalidad concreta.
 
 | Endpoint        | ¿Para qué sirve?                                                                                              |
 |-----------------|---------------------------------------------------------------------------------------------------------------|
