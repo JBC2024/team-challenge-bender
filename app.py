@@ -15,7 +15,7 @@ def home():
     return endpoint_home.function()
 
 # Enruta la funcion al endpoint /api/v1/predict
-@app.route('/api/v1/predict', methods = ['GET'])
+@app.route('/api/v1/predict', methods = ['POST'])
 def predict():
     return endpoint_prediction.function()
 
