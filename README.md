@@ -23,6 +23,7 @@ Hemos preparado varios "endpoints".
 | `/`             | Página principal. Te explica cómo funciona la API.          |
 | `/predict`      | Envías datos y recibes una predicción del modelo.                                                             |
 | `/retrain`      | Permite reentrenar el modelo con nuevos datos.  |
+| `/redeploy`     | Redespliega el modelo|
 
 
 ---
