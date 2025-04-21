@@ -2,7 +2,7 @@ import os
 import requests
 from flask import jsonify
 
-HOOK = os.getenv("REDEPLOY_HOOK")
+HOOK = "https://api.render.com/deploy/srv-cvrvcpeuk2gs73bm9sog?key=yr0QJ_krr-8"
 
 def redeploy():
     if not HOOK:
