@@ -6,9 +6,10 @@ def function():
 
     <h2>Endpoints disponibles:</h2>
     <ul>
-        <li><a href="/"><b>/</b></a>  → La página principal con las instrucciones (donde estás ahora ;) )</li>
-        <li><a href="/api/v1/predict"><b>/api/v1/predict</b></a> → Devuelve una predicción. Necesitas pasarle parámetros.</li>
-        <li><a href="/api/v1/retrain"><b>/api/v1/retrain</b></a> → Reentrena el modelo con nuevos datos.</li>
+        <li><b>/</b> → La página principal con las instrucciones</li>
+        <li><b>/api/v1/predict</b> → Devuelve una predicción. Necesitas pasarle parámetros.</li>
+        <li><b>/api/v1/retrain</b> → Reentrena el modelo con nuevos datos.</li>
+        <li><b>/api/v1/redeploy</b> → Redespliega el modelo.</li>
     </ul>
 
        <h3>Cómo usar el endpoint /api/v1/predict?  </h3>
