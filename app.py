@@ -3,7 +3,7 @@ import os
 
 import endpoint_home
 import endpoint_prediction
-
+import endpoint_redeploy
 # os.chdir(os.path.dirname(__file__))
 
 app = flask.Flask(__name__)
@@ -19,7 +19,10 @@ def home():
 def predict():
     return endpoint_prediction.function()
 
-# Enruta la funcion al endpoint /api/v1/retrain
+# Enruta la funcion al endpoint /api/v1/redeploy
+@app.route('/api/v1/redeploy', methods = ['POST'])
+def redeploy():
+    return endpoint_redeploy.function()
 
 # Enruta la funcion al endpoint /api/v1/opcional
 
