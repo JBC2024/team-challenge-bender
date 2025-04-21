@@ -9,6 +9,7 @@ def function():
         <li><b>/</b> → La página principal con las instrucciones</li>
         <li><b>/api/v1/predict</b> → Devuelve una predicción. Necesitas pasarle parámetros.</li>
         <li><b>/api/v1/retrain</b> → Reentrena el modelo con nuevos datos.</li>
+        <li><b>/api/v1/redeploy</b> → Redespliega el modelo.</li>
     </ul>
 
        <h3>Cómo usar el endpoint /api/v1/predict?</h3>
