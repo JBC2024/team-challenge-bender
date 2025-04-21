@@ -22,7 +22,7 @@ def predict():
 # Enruta la funcion al endpoint /api/v1/redeploy
 @app.route('/api/v1/redeploy', methods = ['POST'])
 def redeploy():
-    return endpoint_redeploy.function()
+    return endpoint_redeploy.redeploy()
 
 # Enruta la funcion al endpoint /api/v1/opcional
 
