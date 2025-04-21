@@ -20,7 +20,6 @@ Hemos preparado varios "endpoints".
 |-----------------|---------------------------------------------------------------------------------------------------------------|
 | `/`             | Página principal. Te explica cómo funciona la API.          |
 |`/api/v1/predict`     | Envías datos y recibes una predicción del modelo.                                                             |
-|`/api/v1/retrain`      | Permite reentrenar el modelo con nuevos datos.  |
 | `/api/v1/redeploy`      | Redespliega el modelo|
 
 ---
@@ -39,16 +38,16 @@ import requests
 url = "https://team-challenge-bender.onrender.com/api/v1/predict"
 
 data = {
-    "year": 2020,
+     "year": 1994,
     "brand": "Toyota",
-    "model": "Corolla",
-    "vehicle_class": "Compact",
-    "engine_size": 2.0,
+    "model": "Hilux",
+    "vehicle_class": "SUV",
+    "engine_size": 2,
     "cylinders": 4,
-    "transmission": "Automatic",
-    "fuel_type": "Gasoline",
-    "fuel_city_Lkm": 7.1,
-    "fuel_hwy_Lkm": 5.5,
+    "transmission": "A4",
+    "fuel_type": "X",
+    "fuel_city_Lkm": 8.4,
+    "fuel_hwy_Lkm": 7.5,
     "co2": 150
 }
 
