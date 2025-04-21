@@ -19,16 +19,20 @@ Hemos preparado varios "endpoints".
 | Endpoint        | ¿Para qué sirve?                                                                                              |
 |-----------------|---------------------------------------------------------------------------------------------------------------|
 | `/`             | Página principal. Te explica cómo funciona la API.          |
-| `/predict`      | Envías datos y recibes una predicción del modelo.                                                             |
-| `/retrain`      | Permite reentrenar el modelo con nuevos datos.  |
-| `/redeploy`     | Redespliega el modelo|
+|`/api/v1/predict`     | Envías datos y recibes una predicción del modelo.                                                             |
+|`/api/v1/retrain`      | Permite reentrenar el modelo con nuevos datos.  |
+| `/api/v1/redeploy`      | Redespliega el modelo|
 
+---
+
+## ¿Qué predice el modelo?
+El modelo está entrenado para predecir el valor de `fuel_comb_mpg`, es decir, el **consumo combinado del vehículo en millas por galón (MPG)**, usando datos como motor, combustible, tipo de coche, etc.
 
 ---
 
 ## ¿Cómo lo uso desde Python?
 
-Se puede acceder a él  con la librería `requests`:
+Se puede acceder a él con la librería `requests`:
 
 ```python
 import requests

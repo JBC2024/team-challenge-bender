@@ -2,7 +2,7 @@ def function():
     return """
     <h1>Team Challenge Bender</h1>
 
-        <p>Bienvenid@ a nuestra API, aquí podrás interactuar con nuestro modelo y obtener predicciones.</p>
+        <p>Bienvenid@ a nuestra API, aquí podrás interactuar con nuestro modelo y obtener predicciones sobre el consumo de tu vehículo.</p>
 
     <h2>Endpoints disponibles:</h2>
     <ul>
@@ -12,7 +12,7 @@ def function():
         <li><b>/api/v1/redeploy</b> → Redespliega el modelo.</li>
     </ul>
 
-       <h3>Cómo usar el endpoint /api/v1/predict?</h3>
+       <h3>Cómo usar el endpoint /api/v1/predict?  </h3>
             <p> Rellena estos parámetros en tu predicción:</p>
             <ul>
                 <li>year</li>
