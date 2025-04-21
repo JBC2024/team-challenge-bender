@@ -1,10 +1,8 @@
-import joblib
 from flask import jsonify, request
+import pandas as pd
+import json
 
 def function():
-    # Cargamos el modelo
-    modelo = joblib.load("model.joblib")
-
     # Obtenemos los datos del cuerpo
     data = request.get_json()
 
@@ -20,9 +18,16 @@ def function():
         return jsonify({'error': f'Faltan campos: {", ".join(missing_fields)}'}), 400
 
     # Creamos una lista de diccionarios para pasárselo al pipeline
-    input_data = [data]  
+    input_data = pd.DataFrame([data])
+    input_data['fuel_comb_Lkm'] = 0
+    input_data['fuel_comb_mpg'] = 0
+
+    # Cargamos el modelo
+    import joblib
+    modelo = joblib.load("model.joblib")
 
     # Predicción y devolvemos el resultado
     prediction = modelo.predict(input_data)
+    result = prediction[0]
     
-    return jsonify({'prediction': prediction[0]})
+    return jsonify(f'Su vehículo consume {"%.2f" % result} mpg')

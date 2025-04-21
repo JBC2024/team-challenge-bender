@@ -1,5 +1,9 @@
 import flask
 import os
+import sys
+
+sys.path.insert(0, './')
+import utils.common
 
 import endpoint_home
 import endpoint_prediction
