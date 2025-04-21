@@ -3,7 +3,6 @@ import os
 
 import endpoint_home
 import endpoint_prediction
-import endpoint_redeploy
 import endpoint_redespliegue
 
 # os.chdir(os.path.dirname(__file__))
