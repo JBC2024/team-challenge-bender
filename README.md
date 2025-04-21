@@ -8,9 +8,7 @@ La API está desplegada públicamente y lista para recibir peticiones y devolver
 
 ## ¿Dónde está publicada?
 
-Accede a nuestra API desde esta URL:
-
-https://team-challenge-bender.onrender.com/
+Accede a nuestra API desde esta URL:  [https://team-challenge-bender.onrender.com/](https://team-challenge-bender.onrender.com/)
 
 
 
@@ -33,11 +31,22 @@ Se puede acceder a él  con la librería `requests`:
 
 ```python
 import requests
+url = "https://team-challenge-bender.onrender.com/api/v1/predict"
 
-# Enviar datos al endpoint /predice
-respuesta = requests.get(
-    "https://team-challenge-bender.onrender.com/predice",
-    params={"dato1": "valor1", "dato2": "valor2"}
-)
+data = {
+    "year": 2020,
+    "brand": "Toyota",
+    "model": "Corolla",
+    "vehicle_class": "Compact",
+    "engine_size": 2.0,
+    "cylinders": 4,
+    "transmission": "Automatic",
+    "fuel_type": "Gasoline",
+    "fuel_city_Lkm": 7.1,
+    "fuel_hwy_Lkm": 5.5,
+    "co2": 150
+}
 
-print(respuesta.json())
+response = requests.post(url, json=data)
+print(response.json())
+
