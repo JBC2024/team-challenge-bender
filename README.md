@@ -19,9 +19,9 @@ Hemos preparado varios "endpoints".
 | Endpoint        | ¿Para qué sirve?                                                                                              |
 |-----------------|---------------------------------------------------------------------------------------------------------------|
 | `/`             | Página principal. Te explica cómo funciona la API.          |
-| `/predict`      | Envías datos y recibes una predicción del modelo.                                                             |
-| `/retrain`      | Permite reentrenar el modelo con nuevos datos.  |
-| `/redeploy`     | Redespliega el modelo|
+|`/api/v1/predict`     | Envías datos y recibes una predicción del modelo.                                                             |
+|`/api/v1/retrain`      | Permite reentrenar el modelo con nuevos datos.  |
+| `/api/v1/redeploy`      | Redespliega el modelo|
 
 ---
 
