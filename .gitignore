@@ -4,3 +4,4 @@
 \# Tests/test.ipynb
 requirements_OK.txt
 /\# Backup
+/utils/__pycache__

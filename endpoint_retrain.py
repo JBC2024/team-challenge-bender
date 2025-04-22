@@ -23,7 +23,7 @@ def function():
 
             # Reentrenamiento
             modelo.fit(new_data, y_new_data)
-            joblib.dump("model.joblib")
+            joblib.dump(modelo, "model.joblib")
             print('\nEl modelo se ha entrenado\n')
 
             return jsonify(f'El modelo ha sido reentrenado con el archivo {file_name}')
