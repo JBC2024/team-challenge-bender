@@ -39,7 +39,7 @@ import requests
 url = "https://team-challenge-bender.onrender.com/api/v1/predict"
 
 data = {
-     "year": 1994,
+     "year": 2006,
     "brand": "Toyota",
     "model": "Hilux",
     "vehicle_class": "SUV",

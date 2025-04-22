@@ -82,7 +82,7 @@ def function():
 
         <pre>
 {
-    "year": 1994,
+    "year": 2006,
     "brand": "Toyota",
     "model": "Hilux",
     "vehicle_class": "SUV",
