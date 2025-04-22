@@ -73,6 +73,7 @@ def function():
         <ul>
             <li><b>(GET) /</b> - La página principal con las instrucciones (donde estás ahora 😉)</li>
             <li><b>(POST) /api/v1/predict</b> - Devuelve una predicción. Necesitas pasarle parámetros.</li>
+            <li><b>(GET) /api/v1/retrain</b> - Reentrena el modelo con nuevos datos.</li>
             <li><b>(POST) /api/v1/redeploy</b> - Redespliega el modelo.</li>
         </ul>
 
