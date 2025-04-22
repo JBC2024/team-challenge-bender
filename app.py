@@ -8,6 +8,7 @@ import utils.common
 import endpoint_home
 import endpoint_prediction
 import endpoint_redespliegue
+import endpoint_retrain
 
 # os.chdir(os.path.dirname(__file__))
 
@@ -29,7 +30,10 @@ def predict():
 def redeploy():
     return endpoint_redespliegue.redeploy()
 
-# Enruta la funcion al endpoint /api/v1/opcional
+# Enruta la funcion al endpoint /api/v1/retrain
+@app.route('/api/v1/retrain', methods = ['GET'])
+def retrain():
+    return endpoint_retrain.function()
 
 debug = False
 if __name__ == "__mmain__":
