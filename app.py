@@ -35,8 +35,5 @@ def redeploy():
 def retrain():
     return endpoint_retrain.function()
 
-debug = False
-if __name__ == "__mmain__":
-    debug = True
-
-app.run(debug=debug, host='0.0.0.0', port=8080)
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0', port=8080)
